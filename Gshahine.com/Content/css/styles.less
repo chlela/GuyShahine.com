@@ -1,0 +1,180 @@
+﻿@import 'helpers.less';
+@import 'settings.less';
+
+body, html {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: @lightGray;
+    color: @black;
+    font-size: 16px;
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    .box-sizing(border-box);
+}
+
+p, h1, h2, h3, ul {
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.home-top {
+    height: 100%;
+
+    .narrow-content {
+
+        .top-banner {
+            img {
+                width: 100%;
+            }
+        }
+
+        .social-links {
+            padding: @grid @grid @grid/2 @grid;
+            text-align: center;
+            background-color: @transWhite80;
+
+            div {
+                display: inline-block;
+
+                img {
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.blog-posts {
+
+    h3 {
+        padding: 0.6em;
+        color: @orange;
+        background-color: @white;
+    }
+
+    ul.links {
+        padding: 1em;
+        background-color: @transWhite70;
+
+        li {
+            margin: 0.5em;
+
+            a {
+                font-size: 20px;
+                text-decoration: none;
+                color: @orange;
+            }
+        }
+    }
+}
+
+
+
+/*@media screen and (min-width:420px) {
+    .home-top {
+        .narrow-content {
+            width: 200px;
+
+            h1 {
+                font-size: (@grid*4);
+            }
+        }
+    }
+}*/
+
+@media screen and (min-width:760px) {
+    /*.home-top {
+        .narrow-content {
+            width: 300px;
+
+            h1 {
+                font-size: (@grid*4);
+            }
+
+            h2 {
+                display: block;
+                background: @transWhite80;
+                color: @darkerGray;
+                padding: @grid;
+                text-align: center;
+                font-weight: 400;
+                font-size: (@grid*2);
+                margin: 0 @grid @grid @grid;
+            }
+        }
+    }*/
+}
+
+@media screen and (min-width:1300px) {
+    .home-top {
+        .narrow-content {
+            /*width: 500px;*/
+            h1 {
+                font-size: (@grid*6);
+            }
+
+            h2 {
+                font-size: (@grid*4);
+            }
+        }
+    }
+}
+/*p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+        list-style-type: none;
+    }
+}*/
+
+/*.header {
+    background: #202020;
+
+    .page_title {
+        width: 100%;
+        padding: 20px;
+        font-size: 24pt;
+        margin: 0;
+    }
+
+    .content {
+        background: #EEEEEE;
+        width: 100%;
+    }
+}*/
+
+
+/*.content {
+    .links {
+        width: 100%;
+        padding: 20px;
+
+        li span {
+            width: 75px;
+            display: inline-block;
+        }
+
+        .stack-overflow {
+            margin-top: 20px;
+        }
+    }
+
+    .background {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}*/
+

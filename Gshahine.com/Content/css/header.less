@@ -1,0 +1,42 @@
+﻿@import 'settings.less';
+
+header {
+    background-color: @transWhite90;
+    z-index: 600;
+    padding: 0.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    h1 {
+        font-size: @grid*2;
+
+        .family-name {
+            display: none;
+        }
+    }
+
+    a:hover, a.selected {
+        border-bottom: 1px solid @orange;
+    }
+
+    a {
+        text-decoration: none;
+        color: @orange;
+        padding-right: @grid/2;
+    }
+}
+
+@media screen and (min-width:420px) {
+    header {
+        h1 {
+            font-size: @grid*3;
+
+            .family-name {
+                color: @gray;
+                display: inline;
+            }
+        }
+    }
+}

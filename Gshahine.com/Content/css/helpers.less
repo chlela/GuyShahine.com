@@ -1,0 +1,32 @@
+﻿.border-style(@color, @width) {
+    border-top-style: double;
+    border-top-width: @width;
+    border-bottom-style: double;
+    border-bottom-width: @width;
+    border-left-style: solid;
+    border-left-width: @width;
+    border-right-style: solid;
+    border-right-width: @width;
+    border-color: @color;
+}
+
+.box-sizing(@style) {
+    -webkit-box-sizing: @style;
+    -moz-box-sizing: @style;
+    box-sizing: @style;
+}
+
+.transition(@duration) {
+    -webkit-transition: background @duration linear;
+    -moz-transition: background @duration linear;
+    -ms-transition: background @duration linear;
+    -o-transition: background @duration linear;
+    transition: background @duration linear;
+}
+
+.background-size(@style){
+    -webkit-background-size: @style;
+    -moz-background-size: @style;
+    -o-background-size: @style;
+    background-size: @style;
+}
