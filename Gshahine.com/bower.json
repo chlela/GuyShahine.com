@@ -1,0 +1,26 @@
+{
+  "name": "Gshahine.com",
+  "version": "1.0.0",
+  "homepage": "https://github.com/chlela/gshahine.com",
+  "authors": [
+    "Guy Shahine <guy@gshahine.com>"
+  ],
+  "description": "Guy Shahine's Personal Website",
+  "keywords": [
+    "guy",
+    "shahine",
+    "chlela",
+    "gshahine"
+  ],
+  "license": "BSD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
