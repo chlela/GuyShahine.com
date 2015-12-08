@@ -13,7 +13,8 @@
             return View("~/Views/Home/Index.cshtml");
         }
 
-        public ActionResult StockTicker()
+        [Route("now")]
+        public ActionResult Now()
         {
             return View();
         }
