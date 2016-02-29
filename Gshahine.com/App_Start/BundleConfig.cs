@@ -16,7 +16,9 @@
 
       string cdnPath = new UriBuilder(CloudConfigurationManager.GetSetting("CdnStorageCdnUrl")).Host;
 
-      bundles.Add(new StyleBundle("~/bundles/main").IncludeDirectory("~/Content/css/", "*.css", true));
+      bundles.Add(new StyleBundle("~/bundles/css/main")
+        .Include("~/bower_components/bootstrap/dist/css/bootstrap.css")
+        .IncludeDirectory("~/content/css/", "*.css", true));
 
       bundles.Add(new ScriptBundle("~/bundles/app").IncludeDirectory("~/Scripts/app", "*.js", true));
 
@@ -25,8 +27,8 @@
       jqueryBundle.CdnFallbackExpression = "jQuery";
       bundles.Add(jqueryBundle);
 
-      bundles.Add(new ScriptBundle("~/bundles/bootstrap-js", "//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
-                      .Include("~/Scripts/bootstrap.js"));
+      bundles.Add(new ScriptBundle("~/bundles/bootstrap", "https://" + cdnPath + "/scripts/bootstrap/3.3.6/bootstrap.min.js")
+                      .Include("~/bower_components/bootstrap/dist/js/bootstrap.js"));
     }
   }
 }

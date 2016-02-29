@@ -170,8 +170,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="bower_components\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="bower_components\bootstrap\dist\js\bootstrap.js" />
     <Content Include="bower_components\jquery\dist\jquery.js" />
-    <Content Include="Content\bootstrap.css" />
     <Content Include="Content\css\common.css">
       <DependentUpon>common.less</DependentUpon>
     </Content>
@@ -195,7 +196,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\css\common.css.map">
       <DependentUpon>common.css</DependentUpon>
     </Content>
@@ -209,6 +209,7 @@
       <DependentUpon>styles.css</DependentUpon>
     </Content>
     <Content Include="bower.json" />
+    <Content Include="bower_components\bootstrap\dist\css\bootstrap.css.map" />
     <None Include="Properties\PublishProfiles\gshahine-wus - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\gshahine-wus.pubxml" />
     <Content Include="Scripts\bootstrap.js" />
