@@ -1,0 +1,37 @@
+{
+  "name": "gshahine.com",
+  "version": "1.0.0",
+  "description": "Guy Shahine's personal page",
+  "main": "/scripts/app/main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-batch": "^1.0.5",
+    "gulp-csslint": "^0.2.2",
+    "gulp-csso": "^1.0.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-less": "^3.0.5",
+    "gulp-util": "^3.0.7",
+    "gulp-visual-studio-csslint": "^1.0.0",
+    "gulp-watch": "^4.3.5",
+    "jshint-stylish": "^2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chlela/gshahine.com.git"
+  },
+  "keywords": [
+    "guy",
+    "shahine"
+  ],
+  "author": "Guy Shahine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chlela/gshahine.com/issues"
+  },
+  "homepage": "https://github.com/chlela/gshahine.com#readme"
+}

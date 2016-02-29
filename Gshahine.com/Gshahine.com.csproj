@@ -173,45 +173,19 @@
     <Content Include="bower_components\bootstrap\dist\css\bootstrap.css" />
     <Content Include="bower_components\bootstrap\dist\js\bootstrap.js" />
     <Content Include="bower_components\jquery\dist\jquery.js" />
-    <Content Include="Content\css\common.css">
-      <DependentUpon>common.less</DependentUpon>
-    </Content>
-    <Content Include="Content\css\footer.css">
-      <DependentUpon>footer.less</DependentUpon>
-    </Content>
-    <Content Include="Content\css\header.css">
-      <DependentUpon>header.less</DependentUpon>
-    </Content>
-    <Content Include="Content\css\helpers.css">
-      <DependentUpon>helpers.less</DependentUpon>
-    </Content>
-    <Content Include="Content\css\settings.css">
-      <DependentUpon>settings.less</DependentUpon>
-    </Content>
-    <Content Include="Content\css\styles.css">
-      <DependentUpon>styles.less</DependentUpon>
-    </Content>
+    <Content Include="build\assets\stylesheets\site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\css\common.css.map">
-      <DependentUpon>common.css</DependentUpon>
-    </Content>
-    <Content Include="Content\css\footer.css.map">
-      <DependentUpon>footer.css</DependentUpon>
-    </Content>
-    <Content Include="Content\css\header.css.map">
-      <DependentUpon>header.css</DependentUpon>
-    </Content>
-    <Content Include="Content\css\styles.css.map">
-      <DependentUpon>styles.css</DependentUpon>
-    </Content>
     <Content Include="bower.json" />
     <Content Include="bower_components\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="Content\less\home-index.less" />
+    <Content Include="package.json" />
     <None Include="Properties\PublishProfiles\gshahine-wus - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\gshahine-wus.pubxml" />
+    <Content Include="gulpfile.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\app\main.js" />
     <Content Include="sitemap.xml" />
@@ -239,14 +213,13 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\css\helpers.less" />
-    <Content Include="Content\css\settings.less" />
-    <Content Include="Content\css\styles.less" />
+    <Content Include="Content\less\helpers.less" />
+    <Content Include="Content\less\settings.less" />
+    <Content Include="Content\less\site.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\css\footer.less" />
-    <Content Include="Content\css\header.less" />
-    <Content Include="Content\css\common.less" />
+    <Content Include="Content\less\footer.less" />
+    <Content Include="Content\less\header.less" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />

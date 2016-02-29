@@ -18,7 +18,7 @@
 
       bundles.Add(new StyleBundle("~/bundles/css/main")
         .Include("~/bower_components/bootstrap/dist/css/bootstrap.css")
-        .IncludeDirectory("~/content/css/", "*.css", true));
+        .Include("~/build/assets/stylesheets/site.css"));
 
       bundles.Add(new ScriptBundle("~/bundles/app").IncludeDirectory("~/Scripts/app", "*.js", true));
 
