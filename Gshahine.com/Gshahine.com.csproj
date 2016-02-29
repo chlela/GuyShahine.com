@@ -186,7 +186,7 @@
     <None Include="Properties\PublishProfiles\gshahine-wus - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\gshahine-wus.pubxml" />
     <Content Include="gulpfile.js" />
-    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="robots.txt" />
     <Content Include="Scripts\app\main.js" />
     <Content Include="sitemap.xml" />
     <Content Include="Web.config">
