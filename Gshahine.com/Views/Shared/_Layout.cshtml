@@ -1,74 +1,75 @@
 ﻿@using System.Web.Optimization
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="content-language" content="en">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="Guy Shahine's Personal Page">
-    <meta name="keywords" content="guy shahine, guy, shahine, chlela, microsoft, azure" />
-    <meta name="author" content="Guy Shahine" />
-    <title>Guy Shahine - Personal Page</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <title>Guy Shahine</title>
 
-    <meta property="og:title" content="Guy Shahine - Personal Page">
-    <meta property="og:description" content="Guy Shahine's Personal Page">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://gshahine.com/">
-    <meta property="og:image" content="http://az388900.vo.msecnd.net/photos/main.jpg">
-    <meta property="og:site_name" content="Guy Shahine">
-    <meta property="fb:admins" content="gshahine">
-    <meta property="profile:first_name" content="Guy" />
-    <meta property="profile:last_name" content="Shahine" />
-    <meta property="profile:username" content="gshahine" />
-    <meta property="profile:gender" content="male" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-    <style type="text/css">
-        @@media screen and (max-width:600px) {
-            @@-ms-viewport {
-                width: device-width;
-                zoom: 100%;
-            }
+  <meta property="og:title" content="Guy Shahine">
+  <meta property="og:description" content="Guy Shahine's Page">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://gshahine.com/">
+  <meta property="og:image" content="http://az388900.vo.msecnd.net/photos/main.jpg">
+  <meta property="og:site_name" content="Guy Shahine">
+  <meta property="fb:admins" content="gshahine">
 
-            @@-o-viewport {
-                width: device-width;
-                zoom: 100%;
-            }
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@("@")mrchlela">
+  <meta name="twitter:creator" content="@("@")mrchlela">
+  <meta name="twitter:title" content="Guy Shahine's Page'">
+  <meta name="twitter:description" content="Co-founder & CTO of resoltz.com">
+  <meta name="twitter:image" content="http://az388900.vo.msecnd.net/photos/main.jpg">
 
-            @@-webkit-viewport {
-                width: device-width;
-                zoom: 100%;
-            }
+  <meta property="profile:first_name" content="Guy" />
+  <meta property="profile:last_name" content="Shahine" />
+  <meta property="profile:username" content="gshahine" />
+  <meta property="profile:gender" content="male" />
 
-            @@-moz-viewport {
-                width: device-width;
-                zoom: 100%;
-            }
+  <meta name="description" content="Guy Shahine's Page">
+  <meta name="keywords" content="guy shahine, guy, shahine, chlela, microsoft, azure" />
+  <meta name="author" content="Guy Shahine" />
 
-            @@viewport {
-                width: device-width;
-                zoom: 100%;
-            }
-        }
-    </style>
-    @Styles.Render("~/bundles/main")
-    @*  @Scripts.Render("~/bundles/modernizr")*@
+  <style type="text/css">
+    @@media screen and (max-width:600px) {
+      @@-ms-viewport {
+        width: device-width;
+        zoom: 100%;
+      }
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      @@-o-viewport {
+        width: device-width;
+        zoom: 100%;
+      }
 
+      @@-webkit-viewport {
+        width: device-width;
+        zoom: 100%;
+      }
+
+      @@-moz-viewport {
+        width: device-width;
+        zoom: 100%;
+      }
+
+      @@viewport {
+        width: device-width;
+        zoom: 100%;
+      }
+    }
+  </style>
+  @Styles.Render("~/bundles/css/main")
+
+  @Html.Partial("_Tracking")
 </head>
 <body>
-    @Html.Partial("Header")
-    @RenderBody()
-    @*@Html.Partial("Footer")*@
+  @Html.Partial("Header")
+  @RenderBody()
+  @*@Html.Partial("Footer")*@
 
-    @Scripts.Render("~/bundles/jquery", "~/bundles/bootstrap-js", "~/bundles/app")
-    @RenderSection("scripts", required: false)
-
+  @Scripts.Render("~/bundles/jquery", "~/bundles/bootstrap", "~/bundles/app")
+  @RenderSection("scripts", required: false)
 </body>
 </html>
