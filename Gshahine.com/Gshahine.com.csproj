@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Gshahine.com</RootNamespace>
     <AssemblyName>Gshahine.com</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -92,9 +92,9 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
@@ -170,6 +170,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="bower_components\jquery\dist\jquery.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\css\common.css">
       <DependentUpon>common.less</DependentUpon>
@@ -207,7 +208,8 @@
     <Content Include="Content\css\styles.css.map">
       <DependentUpon>styles.css</DependentUpon>
     </Content>
-    <Content Include="Content\css\now.less" />
+    <Content Include="bower.json" />
+    <None Include="Properties\PublishProfiles\gshahine-wus - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\gshahine-wus.pubxml" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\app\main.js" />
