@@ -22,12 +22,12 @@
 
       bundles.Add(new ScriptBundle("~/bundles/app").IncludeDirectory("~/Scripts/app", "*.js", true));
 
-      var jqueryBundle = new ScriptBundle("~/bundles/jquery", "https://" + cdnPath + "/scripts/jquery/2.1.4/jquery.min.js")
+      var jqueryBundle = new ScriptBundle("~/bundles/jquery", "https://" + cdnPath + "/scripts/jquery/3.1.0/jquery.min.js")
                            .Include("~/bower_components/jquery/dist/jquery.js");
       jqueryBundle.CdnFallbackExpression = "jQuery";
       bundles.Add(jqueryBundle);
 
-      bundles.Add(new ScriptBundle("~/bundles/bootstrap", "https://" + cdnPath + "/scripts/bootstrap/3.3.6/bootstrap.min.js")
+      bundles.Add(new ScriptBundle("~/bundles/bootstrap", "https://" + cdnPath + "/scripts/bootstrap/3.3.7/bootstrap.min.js")
                       .Include("~/bower_components/bootstrap/dist/js/bootstrap.js"));
     }
   }
