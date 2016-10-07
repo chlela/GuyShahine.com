@@ -29,19 +29,21 @@
   <meta property="profile:gender" content="male" />
 
   <meta name="description" content="Guy Shahine's Page">
-  <meta name="keywords" content="guy shahine, guy, shahine, chlela, microsoft, azure" />
+  <meta name="keywords" content="guy shahine, guy, shahine, resoltz, chlela, lebanon, ehden, programmer, microsoft, azure" />
   <meta name="author" content="Guy Shahine" />
 
   @Styles.Render("~/bundles/css/main")
 
   @Html.Partial("_Tracking")
-</head>
-<body>
+
+  @RenderSection("header", required: false);
+  </ head >
+  < body >
   @Html.Partial("Header")
   @RenderBody()
   @*@Html.Partial("Footer")*@
 
   @Scripts.Render("~/bundles/jquery", "~/bundles/bootstrap", "~/bundles/app")
   @RenderSection("scripts", required: false)
-</body>
+  </body>
 </html>
