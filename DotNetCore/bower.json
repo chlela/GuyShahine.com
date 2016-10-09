@@ -2,7 +2,6 @@
   "name": "Gshahine.com",
   "private": true,
   "dependencies": {
-    "bootstrap": "4.0.0-alpha.4",
     "jquery": "2.2.0",
     "jquery-validation": "1.15.1",
     "jquery-validation-unobtrusive": "3.2.6"
