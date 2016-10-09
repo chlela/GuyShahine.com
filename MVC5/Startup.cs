@@ -1,12 +1,11 @@
-﻿namespace Gshahine.com
+﻿namespace Gshahine.MVC5
 {
-    using Microsoft.Owin;
-    using Owin;
+  using Owin;
 
-    public static class Startup
+  public static class Startup
+  {
+    public static void Configuration(IAppBuilder app)
     {
-        public static void Configuration(IAppBuilder app)
-        {
-        }
     }
+  }
 }

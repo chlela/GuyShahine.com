@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5", "MVC5\MVC5.csproj", "{A7F897AA-198F-4C47-A3C1-AF5E71BBE3CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gshahine.MVC5", "MVC5\Gshahine.MVC5.csproj", "{A7F897AA-198F-4C47-A3C1-AF5E71BBE3CF}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DotNetCore", "DotNetCore\DotNetCore.xproj", "{F4F29158-E913-41F7-907A-C77B6838DA0C}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Gshahine.DotNetCore", "DotNetCore\Gshahine.DotNetCore.xproj", "{F4F29158-E913-41F7-907A-C77B6838DA0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-﻿namespace Gshahine.com.HttpModules
+﻿namespace Gshahine.MVC5.HttpModules
 {
   using System;
   using System.Linq;

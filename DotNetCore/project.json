@@ -1,4 +1,5 @@
-﻿{
+{
+  "copyright": "2016 Guy Shahine. All rights reserved",
   "dependencies": {
     "Microsoft.NETCore.App": {
       "version": "1.0.1",

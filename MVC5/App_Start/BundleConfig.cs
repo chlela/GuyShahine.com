@@ -1,4 +1,4 @@
-﻿namespace Gshahine.com.App_Start
+﻿namespace Gshahine.MVC5.App_Start
 {
   using Microsoft.Azure;
   using System;
@@ -27,8 +27,10 @@
       jqueryBundle.CdnFallbackExpression = "jQuery";
       bundles.Add(jqueryBundle);
 
-      bundles.Add(new ScriptBundle("~/bundles/bootstrap", "https://" + cdnPath + "/scripts/bootstrap/3.3.7/bootstrap.min.js")
-                      .Include("~/bower_components/bootstrap/dist/js/bootstrap.js"));
+      var bootstrapBundle = new ScriptBundle("~/bundles/bootstrap", "https://" + cdnPath + "/scripts/bootstrap/3.3.7/bootstrap.min.js")
+                      .Include("~/bower_components/bootstrap/dist/js/bootstrap.js");
+      bootstrapBundle.CdnFallbackExpression = "window.jQuery && window.jQuery.fn && window.jQuery.fn.modal";
+      bundles.Add(bootstrapBundle);
     }
   }
 }
