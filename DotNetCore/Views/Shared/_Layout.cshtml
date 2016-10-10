@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
+<head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>@ViewData["Title"]</title>
@@ -10,19 +10,15 @@
     <link rel="stylesheet" href="~/css/site.css" />
   </environment>
   <environment names="Staging,Production">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css"           asp-fallback-href="~/lib/semantic/dist/semantic.min.css"          asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css" asp-fallback-href="~/lib/semantic/dist/semantic.min.css" asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
 
     <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
   </environment>
+
+  @RenderSection("head", required: false)
 </head>
 <body>
-  <div class="body-content">
-    @RenderBody()
-    <hr />
-    <footer>
-      <p>&copy; 2016 - Guy Shahine</p>
-    </footer>
-  </div>
+  @RenderBody()
 
   <environment names="Development">
     <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -34,8 +30,9 @@
             asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
             asp-fallback-test="window.jQuery">
     </script>
-    
-    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"                 asp-fallback-src="~/lib/semantic/dist/semantic.min.js"                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">    </script>
+
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js" asp-fallback-src="~/lib/semantic/dist/semantic.min.js" asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+    </script>
 
     <script src="~/js/site.min.js" asp-append-version="true"></script>
   </environment>
