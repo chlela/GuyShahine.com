@@ -1,13 +1,13 @@
-﻿namespace Gshahine.com
+﻿namespace Gshahine.MVC5
 {
-    using System.Web;
-    using System.Web.Mvc;
+  using System.Web.Mvc;
 
-    public class FilterConfig
+  public class FilterConfig
+  {
+    public static void RegisterGlobalFilters(GlobalFilterCollection filters)
     {
-        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
-        {
-            filters.Add(new HandleErrorAttribute());
-        }
+      filters.Add(new ErrorHandler.AiHandleErrorAttribute());
+      filters.Add(new HandleErrorAttribute());
     }
+  }
 }

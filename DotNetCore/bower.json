@@ -1,0 +1,10 @@
+{
+  "name": "Gshahine.com",
+  "private": true,
+  "dependencies": {
+    "jquery": "3.1.1",
+    "jquery-validation": "1.15.1",
+    "jquery-validation-unobtrusive": "3.2.6",
+    "semantic": "^2.2.4"
+  }
+}
