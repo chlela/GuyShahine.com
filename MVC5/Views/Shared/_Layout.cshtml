@@ -1,7 +1,7 @@
 ﻿@using System.Web.Optimization
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
+<head prefix="og: http://ogp.me/ns#">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8" />
   <title>Guy Shahine</title>
@@ -11,7 +11,7 @@
   <meta property="og:title" content="Guy Shahine">
   <meta property="og:description" content="Guy Shahine's Page">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://gshahine.com/">
+  <meta property="og:url" content="http://gshahine.com">
   <meta property="og:image" content="http://az388900.vo.msecnd.net/photos/main.jpg">
   <meta property="og:site_name" content="Guy Shahine">
   <meta property="fb:admins" content="gshahine">
@@ -37,13 +37,13 @@
   @Html.Partial("_Tracking")
 
   @RenderSection("header", required: false);
-  </ head >
-  < body >
+</head>
+<body>
   @Html.Partial("Header")
   @RenderBody()
   @*@Html.Partial("Footer")*@
 
   @Scripts.Render("~/bundles/jquery", "~/bundles/bootstrap", "~/bundles/app")
   @RenderSection("scripts", required: false)
-  </body>
+</body>
 </html>
