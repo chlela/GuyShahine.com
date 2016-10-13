@@ -36,35 +36,23 @@
       text-decoration: none;
     }
 
-    /* Sematic UI */
-
-    .ui.grid > .column:not(.row) {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-    }
-
     .ui.inverted.link.list .item, .ui.inverted.link.list a.item, .ui.inverted.link.list .item a:not(.ui) {
       color: rgba(255, 255, 255, 0.5);
     }
 
-    .masthead.inverted.segment {
+    .masthead {
       position: relative;
       min-height: 700px;
       padding: 1em 0em;
-      background: url('//az388900.vo.msecnd.net/photos/ehden_ny2015.jpg') center center no-repeat;
+      background-position: right center;
+      background-repeat: no-repeat;
+      background-image: url('//az388900.vo.msecnd.net/photos/ehden_ny2015.jpg');
       background-size: cover;
     }
 
-    .masthead h1.ui.header {
-      margin-top: 3em;
-      margin-bottom: 0em;
-      font-size: 4em;
-      font-weight: normal;
-    }
-
-    .masthead .banner-call-to-action {
-      position: relative;
-    }
+      .masthead .banner-call-to-action {
+        position: relative;
+      }
 
     .ui.curtain {
       position: absolute;
@@ -75,22 +63,35 @@
       background-color: rgba(0,0,0,0.5);
     }
 
+    .masthead h1.ui.header {
+        font-size: 3em;
+        margin-top: 2em;
+        margin-bottom: 0em;
+        font-weight: normal;
+      }
+
     .footer.segment {
       text-align: left;
       background-color: #1B1C1D;
       padding: 5em;
     }
 
-    @@media only screen and (min-width: 700px) {
-      .ui.grid > .column:not(.row), .ui.grid > .row > .column {
+      .footer.segment a {
+        display: block;
+      }
+
+    @@media only screen and (min-width: 500px) {
+      .footer-column {
         position: relative;
         display: inline-block;
-        width: 6.25%;
+        width: 25%;
         padding-left: 1rem;
         padding-right: 1rem;
         vertical-align: top;
       }
+    }
 
+    @@media only screen and (min-width: 700px) {
       .ui.list .list > .item, .ui.list > .item, ol.ui.list li, ul.ui.list li {
         display: list-item;
         table-layout: fixed;
@@ -107,16 +108,30 @@
           clear: both;
           visibility: hidden;
         }
+
+      .footer-column {
+        width: 18%;
+      }
     }
 
     @@media only screen and (min-width: 1200px) {
+      .masthead h1.ui.header {
+        margin-top: 3em;
+        font-size: 4em;
+      }
+
+      .ui.footer {
+        text-align: center;
+      }
+
       .ui.container {
         width: 1127px;
-        margin-left: auto;
-        margin-right: auto;
+        display: inline-block;
+        text-align: left;
       }
     }
   </style>
+
 }
 
 <!-- Following Menu -->
@@ -149,7 +164,7 @@
 
 <!-- Page Contents -->
 <div class="pusher">
-  <div class="ui inverted vertical masthead center aligned segment">
+  <div class="ui inverted vertical masthead">
     <div class="ui curtain"></div>
 
     @*<div class="ui container">
@@ -230,17 +245,17 @@
       </div>
     </div>*@
 
-  <div class="ui inverted vertical footer segment">
+  <div class="ui footer segment">
     <div class="ui container">
-      <div class="ui stackable inverted divided equal height stackable grid">
-        <div class="three wide column">
+      <div class="ui grid">
+        <div class="footer-column">
           <h4 class="ui inverted header">About</h4>
           <div class="ui inverted link list">
             <a href="mailto:hi@gshahine.com" target="_blank" class="item" rel="nofollow">Contact</a>
             <a href="http://blog.gshahine.com/" target="_blank" class="item">Blog</a>
           </div>
         </div>
-        <div class="three wide column">
+        <div class="footer-column">
           <h4 class="ui inverted header">Social</h4>
           <div class="ui inverted link list">
             <a href="https://facebook.com/gshahine" target="_blank" class="item" rel="nofollow">Facebook</a>
@@ -248,14 +263,14 @@
             <a href="https://instagram.com/mrchlela" target="_blank" class="item" rel="nofollow">Instagram</a>
           </div>
         </div>
-        <div class="three wide column">
+        <div class="footer-column">
           <h4 class="ui inverted header">Professional</h4>
           <div class="ui inverted link list">
             <a href="http://www.linkedin.com/in/gshahine" target="_blank" class="item" rel="nofollow">LinkedIn</a>
             <a href="https://github.com/chlela" target="_blank" class="item" rel="nofollow">Github</a>
           </div>
         </div>
-        <div class="three wide column">
+        <div class="footer-column">
           <h4 class="ui inverted header">Stackoverflow</h4>
           <a href="http://stackexchange.com/users/119754/guy" target="_blank" class="item" rel="nofollow">
             <amp-img src="https://stackexchange.com/users/flair/119754.png" width="208" height="58" alt="profile for Guy Shahine on Stack Exchange" title="profile for Guy Shahine on Stack Exchange" />
