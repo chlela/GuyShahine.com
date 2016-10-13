@@ -1,6 +1,5 @@
 ﻿@{
   ViewData["Title"] = "Guy Shahine";
-  Layout = "_AMPLayout";
 }
 
 @section head {
@@ -37,8 +36,15 @@
       text-decoration: none;
     }
 
-    .hidden.menu {
-      display: none;
+    /* Sematic UI */
+
+    .ui.grid > .column:not(.row) {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .ui.inverted.link.list .item, .ui.inverted.link.list a.item, .ui.inverted.link.list .item a:not(.ui) {
+      color: rgba(255, 255, 255, 0.5);
     }
 
     .masthead.inverted.segment {
@@ -47,23 +53,6 @@
       padding: 1em 0em;
       background: url('//az388900.vo.msecnd.net/photos/ehden_ny2015.jpg') center center no-repeat;
       background-size: cover;
-    }
-
-    .ui.curtain {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0,0,0,0.5);
-    }
-
-    .masthead .logo.item img {
-      margin-right: 1em;
-    }
-
-    .masthead .ui.menu .ui.button {
-      margin-left: 0.5em;
     }
 
     .masthead h1.ui.header {
@@ -77,85 +66,54 @@
       position: relative;
     }
 
-    .masthead h2 {
-      font-size: 1.7em;
-      font-weight: normal;
+    .ui.curtain {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
     }
-
-
-    .ui.vertical.stripe {
-      padding: 8em 0em;
-    }
-
-      .ui.vertical.stripe h3 {
-        font-size: 2em;
-      }
-
-      .ui.vertical.stripe .button + h3, .ui.vertical.stripe p + h3 {
-        margin-top: 3em;
-      }
-
-      .ui.vertical.stripe .floated.image {
-        clear: both;
-      }
-
-      .ui.vertical.stripe p {
-        font-size: 1.33em;
-      }
-
-      .ui.vertical.stripe .horizontal.divider {
-        margin: 3em 0em;
-      }
-
-    .quote.stripe.segment {
-      padding: 0em;
-    }
-
-      .quote.stripe.segment .grid .column {
-        padding-top: 5em;
-        padding-bottom: 5em;
-      }
 
     .footer.segment {
       text-align: left;
-      background-color: #333;
+      background-color: #1B1C1D;
       padding: 5em;
     }
 
-    .ui.secondary.inverted.pointing.menu {
-      border: none;
+    @@media only screen and (min-width: 700px) {
+      .ui.grid > .column:not(.row), .ui.grid > .row > .column {
+        position: relative;
+        display: inline-block;
+        width: 6.25%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        vertical-align: top;
+      }
+
+      .ui.list .list > .item, .ui.list > .item, ol.ui.list li, ul.ui.list li {
+        display: list-item;
+        table-layout: fixed;
+        list-style-type: none;
+        list-style-position: outside;
+        padding: .21428571em 0;
+        line-height: 1.14285714em;
+      }
+
+        .ui.list > .item:after, .ui.list > .list > .item, ol.ui.list > li:first-child:after, ul.ui.list > li:first-child:after {
+          content: '';
+          display: block;
+          height: 0;
+          clear: both;
+          visibility: hidden;
+        }
     }
 
-    .secondary.pointing.menu .toc.item {
-      display: none;
-    }
-
-    @@media only screen and (max-width: 700px) {
-      .ui.fixed.menu {
-        display: none;
-      }
-
-      .secondary.pointing.menu .item,
-      .secondary.pointing.menu .menu {
-        display: none;
-      }
-
-      .secondary.pointing.menu .toc.item {
-        display: block;
-      }
-
-      .masthead.segment {
-        min-height: 350px;
-      }
-
-      .masthead h1.ui.header {
-        font-size: 2em;
-        margin-top: 1.5em;
-      }
-
-      .masthead h2 {
-        margin-top: 0.5em;
-        font-size: 1.5em;
+    @@media only screen and (min-width: 1200px) {
+      .ui.container {
+        width: 1127px;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   </style>
@@ -215,7 +173,7 @@
         GUY SHAHINE
       </h1>
       <h2>Full stack software developer at <a href="https://www.resoltz.com">Resoltz</a></h2>
-      <div class="ui huge primary button"><a href="http://blog.gshahine.com/" target="_blank">Blog <i class="right arrow icon"></i></a></div>
+      @*<div class="ui huge primary button"><a href="http://blog.gshahine.com/" target="_blank">Blog <i class="right arrow icon"></i></a></div>*@
     </div>
   </div>
 

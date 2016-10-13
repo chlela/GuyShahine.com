@@ -4,7 +4,8 @@
 
   public class HomeController : Controller
   {
-    public IActionResult Index()
+    [Route("html5")]
+    public IActionResult HTML5()
     {
       return View();
     }
