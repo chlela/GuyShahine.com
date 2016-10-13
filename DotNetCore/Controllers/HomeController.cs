@@ -9,6 +9,11 @@
       return View();
     }
 
+    public IActionResult AMP()
+    {
+      return View();
+    }
+
     public IActionResult About()
     {
       ViewData["Message"] = "";
