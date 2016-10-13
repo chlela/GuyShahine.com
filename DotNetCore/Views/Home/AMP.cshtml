@@ -72,11 +72,19 @@
       background-color: rgba(0,0,0,0.5);
     }
 
-    .masthead h1.ui.header {
+    h1.ui.header {
       font-size: 3em;
       margin-top: 2em;
-      margin-bottom: 0em;
+      margin-bottom: 1em;
       font-weight: normal;
+    }
+
+      h1.ui.header.banner {
+        margin-bottom: 0;
+      }
+
+    .row {
+      margin-bottom: 3em;
     }
 
     .footer.segment {
@@ -189,7 +197,7 @@
       </div>*@
 
     <div class="ui text container banner-call-to-action">
-      <h1 class="ui inverted header">
+      <h1 class="ui header banner">
         GUY SHAHINE
       </h1>
       <h2>Full stack software developer at <a href="https://www.resoltz.com">Resoltz</a></h2>
@@ -200,7 +208,7 @@
   <div class="ui vertical stripe segment">
     <div class="ui middle aligned stackable grid container">
       <div>
-        <h1>Instagram</h1>
+        <h1 class="ui header">Instagram</h1>
       </div>
       <div class="row">
         <div class="insta-posts-container">
