@@ -5,6 +5,7 @@
 @section head {
   <link rel="canonical" href="http://gshahine.com" />
   <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 
   <script type="application/ld+json">
     {
@@ -25,7 +26,6 @@
     }
     }
   </script>
-
 
   <style amp-custom>
     body {
@@ -87,6 +87,10 @@
       margin-bottom: 3em;
     }
 
+    .section-flat {
+      display: none;
+    }
+
     .footer.segment {
       text-align: left;
       color: #fff;
@@ -110,6 +114,14 @@
     }
 
     @@media only screen and (min-width: 700px) {
+      .section-flat {
+        display: block;
+      }
+
+      .section-carousel {
+        display: none;
+      }
+
       .ui.list .list > .item, .ui.list > .item, ol.ui.list li, ul.ui.list li {
         display: list-item;
         table-layout: fixed;
@@ -144,7 +156,6 @@
       }
     }
   </style>
-
 }
 
 <!-- Following Menu -->
@@ -210,7 +221,7 @@
       <div>
         <h1 class="ui header">Instagram</h1>
       </div>
-      <div class="row">
+      <div class="section-flat row">
         <div class="insta-posts-container">
           <div class="insta-post">
             <amp-instagram data-shortcode="0GALdgscGX"
@@ -234,6 +245,29 @@
             </amp-instagram>
           </div>
         </div>
+      </div>
+
+      <div class="section-carousel row">
+        <amp-carousel width="1"
+                      height="1"
+                      layout="responsive"
+                      type="slides">
+          <amp-instagram data-shortcode="0GALdgscGX"
+                         width="1"
+                         height="1"
+                         layout="responsive">
+          </amp-instagram>
+          <amp-instagram data-shortcode="BIGPcGWgG_u"
+                         width="1"
+                         height="1"
+                         layout="responsive">
+          </amp-instagram>
+          <amp-instagram data-shortcode="BIxqPYAhANc"
+                         width="1"
+                         height="1"
+                         layout="responsive">
+          </amp-instagram>
+        </amp-carousel>
       </div>
     </div>
   </div>
