@@ -6,6 +6,7 @@
   <link rel="canonical" href="http://gshahine.com" />
   <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
   <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
 
   <script type="application/ld+json">
     {
@@ -33,7 +34,7 @@
     }
 
     a {
-      color: yellowgreen;
+      color: #70c1b3;
       text-decoration: none;
     }
 
@@ -42,6 +43,18 @@
       margin: 0 auto;
       max-width: 1000px;
       padding: 0 20px;
+    }
+
+    .section-odd {
+      padding: 3em 0 4em;
+      color: #247ba0;
+      background-color: #fff;
+    }
+
+    .section-even {
+      padding: 3em 0 4em;
+      background-color: #247ba0;
+      color: #fff;
     }
 
     .ui.inverted.link.list .item, .ui.inverted.link.list a.item, .ui.inverted.link.list .item a:not(.ui) {
@@ -74,12 +87,11 @@
 
     h1.ui.header {
       font-size: 3em;
-      margin-top: 2em;
-      margin-bottom: 1em;
       font-weight: normal;
     }
 
       h1.ui.header.banner {
+        margin-top: 2em;
         margin-bottom: 0;
       }
 
@@ -188,7 +200,7 @@
 
 <!-- Page Contents -->
 <div class="pusher">
-  <div class="ui inverted vertical masthead">
+  <section class="ui inverted vertical masthead">
     <div class="ui curtain"></div>
 
     @*<div class="ui container">
@@ -214,10 +226,25 @@
       <h2>Full stack software developer at <a href="https://www.resoltz.com">Resoltz</a></h2>
       @*<div class="ui huge primary button"><a href="http://blog.gshahine.com/" target="_blank">Blog <i class="right arrow icon"></i></a></div>*@
     </div>
-  </div>
+  </section>
 
-  <div class="ui vertical stripe segment">
-    <div class="ui middle aligned stackable grid container">
+  @*<section class="uisegment section-odd">
+      <div class="ui container">
+        <div>
+          <h1 class="ui header">Companies</h1>
+        </div>
+        <div class="center aligned row">
+          <amp-carousel width="1"
+                        height="1"
+                        layout="responsive"
+                        type="slides">
+          </amp-carousel>
+        </div>
+      </div>
+    </section>*@
+
+  <section class="ui segment section-even">
+    <div class="ui container">
       <div>
         <h1 class="ui header">Instagram</h1>
       </div>
@@ -270,25 +297,17 @@
         </amp-carousel>
       </div>
     </div>
-  </div>
+  </section>
 
-
-  @*<div class="ui vertical stripe quote segment">
-      <div class="ui equal width stackable internally celled grid">
-        <div class="center aligned row">
-          <div class="column">
-            <h3>"What a Company"</h3>
-            <p>That is what they all say about us</p>
-          </div>
-          <div class="column">
-            <h3>"I shouldn't have gone with their competitor."</h3>
-            <p>
-              <img src="" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
-            </p>
-          </div>
-        </div>
+  @*<section class="ui segment section-even">
+    <div class="ui container">
+      <div>
+        <h1 class="ui header">Contact</h1>
       </div>
-    </div>*@
+      <div class="section-flat row">
+      </div>
+    </div>
+  </section>*@
 
   @*<div class="ui vertical stripe segment">
       <div class="ui text container">
