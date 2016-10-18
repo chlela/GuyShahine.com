@@ -5,6 +5,7 @@
   "main": "/scripts/app/main.js",
   "dependencies": {},
   "devDependencies": {
+    "bower": "^1.7.9",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-batch": "^1.0.5",
