@@ -216,7 +216,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="bower.json" />
-    <Content Include="bower_components\bootstrap\dist\css\bootstrap.css.map" />
     <Content Include="Content\less\home-index.less" />
     <Content Include="package.json" />
     <Content Include="packages.config">
