@@ -5,6 +5,7 @@
     "jquery": "3.1.1",
     "jquery-validation": "1.15.1",
     "jquery-validation-unobtrusive": "3.2.6",
-    "semantic": "^2.2.4"
+    "semantic": "^2.2.4",
+    "font-awesome": "fontawesome#^4.7.0"
   }
 }
