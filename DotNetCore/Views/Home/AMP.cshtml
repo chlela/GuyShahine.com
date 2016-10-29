@@ -47,6 +47,10 @@
       font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
     }
 
+    * {
+      box-sizing: border-box;
+    }
+
     /* FONT PATH
     * -------------------------- */
     @@font-face {
@@ -288,15 +292,18 @@
       content: "\f003";
     }
 
+    .fa-align-left:before {
+      content: "\f036";
+    }
+
     a {
       color: #70c1b3;
       text-decoration: none;
     }
 
     .container {
-      box-sizing: border-box;
       margin: 0 auto;
-      max-width: 1000px;
+      max-width: 768px;
       padding: 0 20px;
     }
 
@@ -312,9 +319,26 @@
       color: #fff;
     }
 
+    .section-even-more-link {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+    .section-odd-more-link {
+      color: #247ba0;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+
     .paragraph-annotation {
       color: #b2dbbf;
     }
+
+
 
     .ui.inverted.link.list .item, .ui.inverted.link.list a.item, .ui.inverted.link.list .item a:not(.ui) {
       color: rgba(255, 255, 255, 0.5);
@@ -340,14 +364,24 @@
           padding-left: 10px;
         }
 
-        .masthead .banner-call-to-action i {
+
+      .masthead .banner-external-links {
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+
+        .masthead .banner-external-links a {
+          padding: 0 10px;
+        }
+
+        .masthead .banner-external-links i {
           border-radius: 50%;
           border: 1px solid #70c1b3;
         }
 
-      .masthead .banner-external-links a {
-        padding: 0 10px;
-      }
 
     .ui.curtain {
       position: absolute;
@@ -381,6 +415,33 @@
       display: none;
     }
 
+    .blog-tabs {
+      margin-bottom: 60px;
+    }
+
+    .blog-tab {
+      position: relative;
+      display: block;
+      padding: 1px 20px 20px 80px;
+      margin-bottom: 10px;
+      background-color: #fff;
+    }
+
+      .blog-tab i {
+        position: absolute;
+        top: calc(50% - 8px);
+        left: 20px;
+      }
+
+    .blog-title {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .blog-subtitle {
+      color: #b2dbbf;
+    }
+
     .footer.segment {
       text-align: left;
       color: #fff;
@@ -404,6 +465,7 @@
     }
 
     @@media only screen and (min-width: 700px) {
+
       .section-flat {
         display: block;
       }
@@ -440,6 +502,10 @@
     }
 
     @@media only screen and (min-width: 1200px) {
+      .container {
+        max-width: 1000px;
+      }
+
       .masthead h1.ui.header {
         margin-top: 3em;
         font-size: 4em;
@@ -502,29 +568,25 @@
         GUY SHAHINE
       </h1>
       <h2 class="banner-tagline">Software Engineer Guy</h2>
-      <div class="banner-external-links">
-        <a href="https://github.com/chlela" target="_blank">
-          <span class="fa-2x fa-stack">
-            <i class="fa fa-github fa-inverse fa-stack-1x"></i>
-          </span>
-        </a>
-        <a href="http://stackexchange.com/users/119754/guy" target="_blank">
-          <span class="fa-2x fa-stack">
-            <i class="fa fa-stack-overflow fa-inverse fa-stack-1x"></i>
-          </span>
-        </a>
-        @*<a href="#" target="_blank">
-            <span class="fa-2x fa-stack">
-              <i class="fa fa-linkedin fa-stack-1x"></i>
-            </span>
-          </a>*@
-        <a href="http://blog.gshahine.com/">
-          <span class="fa-2x fa-stack">
-            <i class="fa fa-wordpress fa-inverse fa-stack-1x"></i>
-          </span>
-        </a>
-      </div>
     </div>
+    <div class="banner-external-links">
+      <a href="https://github.com/chlela" target="_blank">
+        <span class="fa-2x fa-stack">
+          <i class="fa fa-github fa-inverse fa-stack-1x"></i>
+        </span>
+      </a>
+      <a href="http://stackexchange.com/users/119754/guy" target="_blank">
+        <span class="fa-2x fa-stack">
+          <i class="fa fa-stack-overflow fa-inverse fa-stack-1x"></i>
+        </span>
+      </a>
+      <a href="http://blog.gshahine.com/">
+        <span class="fa-2x fa-stack">
+          <i class="fa fa-wordpress fa-inverse fa-stack-1x"></i>
+        </span>
+      </a>
+    </div>
+
   </section>
 
   <section class="uisegment section-odd about-section">
@@ -546,31 +608,74 @@
         </p>
         <p>
           <span class="paragraph-annotation">2005 - </span>
-          Boarded my first time flight headed to Seattle, WA at age 21 (luckily, it was legal age to consume alcohol in the US).
-          First semester took a lot of adjustments. Second semester got much more exciting escpecially when I got accepted to intern at Nintendo.
+          Boarded my first time flight headed to <b>Seattle, WA</b> at age 21 (luckily, it was legal age to consume alcohol in the US).
+          First semester took a lot of adjustments. Second semester got much more exciting escpecially when I got accepted to intern at <b>Nintendo</b>.
         </p>
         <p>
           <span class="paragraph-annotation">2006 - </span>
-          Flew back to Lebanon and started working at al Kalam al Electroni [القلم الالكتروني] building mobile games, (offshore R&amp;D for DigiPen) .
+          Flew back to <b>Lebanon</b> and started working at al <b>Kalam al Electroni [القلم الالكتروني]</b> building mobile games, (offshore R&amp;D for DigiPen) .
           Suddenly, In less than a month, a regonial conflict led to the destruction of most bridges, power plants, airport, etc.
           (If you're interested in getting a small taste, watch <a href="http://www.imdb.com/title/tt0944985/" target="_blank" rel="nofollow">Anthony Bourdain's episode in Beirut</a>).
-          Life became very difficult so I decided to go back to Redmond and complete my Masters in Computer Science at DigiPen.
+          Life became very difficult so I decided to go back to Redmond and complete my Masters in Computer Science at <b>DigiPen</b>.
         </p>
         <p>
           <span class="paragraph-annotation">2006 (Summer) - </span>
-          Came back to the US and this time around, it was much easier, mainly because I was joined by few of my classmates from Lebanon, where a couple of them became my
+          Came back to the <b>US</b> and this time around, it was much easier, mainly because I was joined by few of my classmates from Lebanon, where a couple of them became my
           roommates/classmates/best friends/co-workers/brothers. (Patrick lives in Seattle today and Karim is close by in San Mateo).
         </p>
         <p>
-          <span class="paragraph-annotation">2007 - </span>
-          to be continued
+          <span class="paragraph-annotation">2008 - </span>
+          Joined <b>Microsoft</b> to work on a stealth project codenamed RedDog, then rumoured to be commercialized as Windows Strata then one morning we woke up and all over the news
+          it was called Windows Azure. In 2016 it was then renamed to <b>Microsoft Azure</b>.
         </p>
-
+        <p>
+          <span class="paragraph-annotation">2014 - </span>
+          Moved to <b>San Francisco</b> to join <b>Yammer</b>
+        </p>
+        <p>
+          <span class="paragraph-annotation">2015 - </span>
+          Quit my full-time job to focus 100% on <b>Resoltz</b>, a fitness app to get training plans from personal trainers around the world.
+        </p>
+        <p>
+          <span class="paragraph-annotation">2016 - </span>
+          Documenting this story
+        </p>
       </div>
     </div>
   </section>
 
-  <section class="ui segment section-even">
+  <section class="uisegment section-even">
+    <div class="ui container">
+      <div>
+        <h1 class="ui header">Recent Blog Posts</h1>
+      </div>
+      <div class="center aligned row">
+        <div class="blog">
+          <div class="blog-tabs">
+            <a class="blog-tab" href="http://blog.gshahine.com/converting-users-to-customers/" target="_blank">
+              <i class="fa fa-align-left fa-fw"></i>
+              <h3 class="blog-title">Converting Users to Customers</h3>
+              <div class="blog-subtitle">October 22, 2016</div>
+            </a>
+            <a class="blog-tab" href="http://blog.gshahine.com/behind-resoltz-com/" target="_blank">
+              <i class="fa fa-align-left fa-fw"></i>
+              <h3 class="blog-title">Behind Resoltz.com</h3>
+              <div class="blog-subtitle">February 15, 2016</div>
+            </a>
+            <a class="blog-tab" href="http://blog.gshahine.com/hummus-recipe/" target="_blank">
+              <i class="fa fa-align-left fa-fw"></i>
+              <h3 class="blog-title">My Favorite Hummus Recipe</h3>
+              <div class="blog-subtitle">January 29, 2015</div>
+            </a>
+          </div>
+
+          <a class="section-even-more-link" href="http://blog.gshahine.com/" target="_blank">View More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ui segment section-odd">
     <div class="ui container">
       <div>
         <h1 class="ui header">Instagram Guy</h1>
@@ -623,47 +728,29 @@
           </amp-instagram>
         </amp-carousel>
       </div>
+
+      <a href="https://instagram.com/mrchlela" class="section-odd-more-link" target="_blank" rel="nofollow">View More</a>
     </div>
   </section>
 
-  @*<section class="uisegment section-odd">
+
+
+  @*<section class="ui segment section-odd">
       <div class="ui container">
         <div>
-          <h1 class="ui header">Companies</h1>
+          <h1 class="ui header">Projects</h1>
         </div>
-        <div class="center aligned row">
+        <div class="section-carousel row">
           <amp-carousel width="1"
                         height="1"
                         layout="responsive"
                         type="slides">
+
           </amp-carousel>
         </div>
       </div>
     </section>*@
 
-  @*<section class="ui segment section-even">
-      <div class="ui container">
-        <div>
-          <h1 class="ui header">Contact</h1>
-        </div>
-        <div class="section-flat row">
-        </div>
-      </div>
-    </section>*@
-
-  @*<div class="ui vertical stripe segment">
-      <div class="ui text container">
-        <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
-        <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
-        <a class="ui large button">Read More</a>
-        <h4 class="ui horizontal header divider">
-          <a href="#">Case Studies</a>
-        </h4>
-        <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-        <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-        <a class="ui large button">I'm Still Quite Interested</a>
-      </div>
-    </div>*@
 
   <div class="ui footer segment">
     <div class="ui container">
