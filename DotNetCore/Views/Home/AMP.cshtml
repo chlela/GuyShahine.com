@@ -1,0 +1,788 @@
+﻿@{
+  ViewData["Title"] = "Guy Shahine";
+}
+
+@section head {
+  <link rel="canonical" href="http://gshahine.com" />
+  <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+
+  <script type="application/ld+json">
+    {
+    "@@context": "http://schema.org/",
+    "@@type": "Person",
+    "name": "Guy Shahine",
+    "url": "http://gshahine.com",
+    "sameAs": [
+    "https://www.facebook.com/gshahine",
+    "https://instagram.com/mrchlela",
+    "https://twitter.com/mrchlela",
+    "https://www.linkedin.com/in/gshahine",
+    "https://plus.google.com/+GuyShahine"
+    ],
+    "givenName": "Guy",
+    "familyName": "Shahine",
+    "description": "Guy Shahine is a Lebanese Software Engineer currently living in San Francisco, CA.  After 6 years at Microsoft, Guy jumped into the entrepreneurship world and co-founded Resoltz Inc., a health and wellness app",
+    "image": "http://gshahine.com/images/guy-shahine.jpg",
+    "jobTitle": "Software Engineer",
+    "birthDate": "1984.05.14",
+    "birthPlace": "Ehden, Lebanon",
+    "alumniOf": "DigiPen Institute of Technology",
+    "memberOf": "Alchemist Accelerator",
+    "height": "75 inches",
+    "nationality": "Lebanese",
+    "contactPoint": {
+    "@@type": "ContactPoint",
+    "email": "hey@gshahine.com",
+    "telephone": "+14242343361",
+    "contactType": "technical support",
+    "areaServed": "US",
+    "availableLanguage": ["English", "French", "Arabic"]
+    },
+    "homeLocation": {
+    "@@type": "PostalAddress",
+    "addressLocality": "San Francisco",
+    "addressRegion": "CA",
+    "addressCountry": "USA"
+    }
+    }
+  </script>
+
+  <style amp-custom>
+    body {
+      font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* FONT PATH
+    * -------------------------- */
+    @@font-face {
+      font-family: 'FontAwesome';
+      src: url('/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('/lib/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('/lib/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .fa {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    /* makes the font 33% larger relative to the icon container */
+    .fa-lg {
+      font-size: 1.33333333em;
+      line-height: 0.75em;
+      vertical-align: -15%;
+    }
+
+    .fa-2x {
+      font-size: 2em;
+    }
+
+    .fa-3x {
+      font-size: 3em;
+    }
+
+    .fa-4x {
+      font-size: 4em;
+    }
+
+    .fa-5x {
+      font-size: 5em;
+    }
+
+    .fa-fw {
+      width: 1.28571429em;
+      text-align: center;
+    }
+
+    .fa-ul {
+      padding-left: 0;
+      margin-left: 2.14285714em;
+      list-style-type: none;
+    }
+
+      .fa-ul > li {
+        position: relative;
+      }
+
+    .fa-li {
+      position: absolute;
+      left: -2.14285714em;
+      width: 2.14285714em;
+      top: 0.14285714em;
+      text-align: center;
+    }
+
+      .fa-li.fa-lg {
+        left: -1.85714286em;
+      }
+
+    .fa-border {
+      padding: .2em .25em .15em;
+      border: solid 0.08em #eeeeee;
+      border-radius: .1em;
+    }
+
+    .fa-pull-left {
+      float: left;
+    }
+
+    .fa-pull-right {
+      float: right;
+    }
+
+    .fa.fa-pull-left {
+      margin-right: .3em;
+    }
+
+    .fa.fa-pull-right {
+      margin-left: .3em;
+    }
+
+    .fa-spin {
+      -webkit-animation: fa-spin 2s infinite linear;
+      animation: fa-spin 2s infinite linear;
+    }
+
+    .fa-pulse {
+      -webkit-animation: fa-spin 1s infinite steps(8);
+      animation: fa-spin 1s infinite steps(8);
+    }
+
+    @@-webkit-keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+      }
+    }
+
+    @@keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+      }
+    }
+
+    .fa-rotate-90 {
+      -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+
+    .fa-rotate-180 {
+      -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+
+    .fa-rotate-270 {
+      -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+      -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotate(270deg);
+    }
+
+    .fa-flip-horizontal {
+      -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+      -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+      transform: scale(-1, 1);
+    }
+
+    .fa-flip-vertical {
+      -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+      -webkit-transform: scale(1, -1);
+      -ms-transform: scale(1, -1);
+      transform: scale(1, -1);
+    }
+
+    :root .fa-rotate-90,
+    :root .fa-rotate-180,
+    :root .fa-rotate-270,
+    :root .fa-flip-horizontal,
+    :root .fa-flip-vertical {
+      filter: none;
+    }
+
+    .fa-stack {
+      position: relative;
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
+      vertical-align: middle;
+    }
+
+    .fa-stack-1x,
+    .fa-stack-2x {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .fa-stack-1x {
+      line-height: inherit;
+    }
+
+    .fa-stack-2x {
+      font-size: 2em;
+    }
+
+    .fa-inverse {
+      color: #ffffff;
+    }
+
+    .fa-facebook-f:before,
+    .fa-facebook:before {
+      content: "\f09a";
+    }
+
+    .fa-github:before {
+      content: "\f09b";
+    }
+
+    .fa-twitter:before {
+      content: "\f099";
+    }
+
+    .fa-instagram:before {
+      content: "\f16d";
+    }
+
+    .fa-wordpress:before {
+      content: "\f19a";
+    }
+
+    .fa-linkedin:before {
+      content: "\f0e1";
+    }
+
+    .fa-stack-overflow:before {
+      content: "\f16c";
+    }
+
+    .fa-circle:before {
+      content: "\f111";
+    }
+
+    .fa-circle-o:before {
+      content: "\f10c";
+    }
+
+    .fa-circle-thin:before {
+      content: "\f1db";
+    }
+
+    .fa-envelope-o:before {
+      content: "\f003";
+    }
+
+    .fa-align-left:before {
+      content: "\f036";
+    }
+
+    a {
+      color: #70c1b3;
+      text-decoration: none;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 768px;
+      padding: 0 20px;
+    }
+
+    .section-odd {
+      padding: 3em 0 4em;
+      color: #247ba0;
+      background-color: #fff;
+    }
+
+    .section-even {
+      padding: 3em 0 4em;
+      background-color: #247ba0;
+      color: #fff;
+    }
+
+    .section-even-more-link {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+    .section-odd-more-link {
+      color: #247ba0;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+
+    .paragraph-annotation {
+      color: #b2dbbf;
+    }
+
+    .ui.inverted.link.list .item, .ui.inverted.link.list a.item, .ui.inverted.link.list .item a:not(.ui) {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .masthead {
+      position: relative;
+      color: #fff;
+      min-height: 700px;
+      padding: 1em 0em;
+      background-position: right center;
+      background-repeat: no-repeat;
+      background-image: url('/images/ehden_ny2015.jpg');
+      background-size: cover;
+    }
+
+      .masthead .banner-call-to-action {
+        position: relative;
+      }
+
+        .masthead .banner-call-to-action .banner-tagline {
+          color: #ddd;
+          padding-left: 10px;
+        }
+
+
+      .masthead .banner-external-links {
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+
+        .masthead .banner-external-links a {
+          padding: 0 10px;
+        }
+
+        .masthead .banner-external-links i {
+          border-radius: 50%;
+          border: 1px solid #70c1b3;
+        }
+
+
+    .ui.curtain {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    h1.ui.header {
+      font-size: 3em;
+      font-weight: normal;
+      margin-top: 2em;
+      margin-bottom: 0;
+    }
+
+    .row {
+      margin-bottom: 3em;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    .section-flat {
+      display: none;
+    }
+
+    .blog-tabs {
+      margin-bottom: 60px;
+    }
+
+    .blog-tab {
+      position: relative;
+      display: block;
+      padding: 1px 20px 20px 80px;
+      margin-bottom: 10px;
+      background-color: #fff;
+    }
+
+      .blog-tab i {
+        position: absolute;
+        top: calc(50% - 8px);
+        left: 20px;
+      }
+
+    .blog-title {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .blog-subtitle {
+      color: #b2dbbf;
+    }
+
+    .footer.segment {
+      text-align: left;
+      color: #fff;
+      background-color: #1B1C1D;
+      padding: 5em;
+    }
+
+      .footer.segment a {
+        display: block;
+      }
+
+    @@media only screen and (min-width: 500px) {
+      .footer-column {
+        position: relative;
+        display: inline-block;
+        width: 25%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        vertical-align: top;
+      }
+    }
+
+    @@media only screen and (min-width: 700px) {
+      .section-flat {
+        display: block;
+      }
+
+      .section-carousel {
+        display: none;
+      }
+
+      .ui.list .list > .item, .ui.list > .item, ol.ui.list li, ul.ui.list li {
+        display: list-item;
+        table-layout: fixed;
+        list-style-type: none;
+        list-style-position: outside;
+        padding: .21428571em 0;
+        line-height: 1.14285714em;
+      }
+
+        .ui.list > .item:after, .ui.list > .list > .item, ol.ui.list > li:first-child:after, ul.ui.list > li:first-child:after {
+          content: '';
+          display: block;
+          height: 0;
+          clear: both;
+          visibility: hidden;
+        }
+
+      .insta-post {
+        width: 33%;
+        display: inline-block;
+      }
+
+      .footer-column {
+        width: 18%;
+      }
+    }
+
+    @@media only screen and (min-width: 1200px) {
+      .container {
+        max-width: 1000px;
+      }
+
+      .masthead h1.ui.header {
+        margin-top: 3em;
+        font-size: 4em;
+      }
+    }
+  </style>
+}
+
+<!-- Following Menu -->
+@*<div class="ui large top fixed hidden menu">
+    <div class="ui container">
+      <a href="/" class="active item">Home</a>
+      <a class="item">Work</a>
+        <a class="item">Company</a>
+        <a class="item">Careers</a>
+      <div class="right menu">
+        <div class="item">
+            <a class="ui button">Log in</a>
+          </div>
+          <div class="item">
+            <a class="ui primary button">Sign Up</a>
+          </div>
+      </div>
+    </div>
+  </div>*@
+
+<!-- Sidebar Menu -->
+@*<div class="ui vertical inverted sidebar menu">
+    <a href="/" class="active item">Home</a>
+    <a class="item">Work</a>
+      <a class="item">Company</a>
+      <a class="item">Careers</a>
+    <a class="item">Login</a>
+      <a class="item">Signup</a>
+  </div>*@
+
+<!-- Page Contents -->
+<div class="pusher">
+  <section class="ui inverted vertical masthead">
+    <div class="ui curtain"></div>
+
+    @*<div class="ui container">
+        <div class="ui large secondary inverted pointing menu">
+          <a class="toc item">
+            <i class="sidebar icon"></i>
+          </a>
+          <a href="/" class="active item">Home</a>
+          <a class="item">Work</a>
+          <a class="item">Company</a>
+          <a class="item">Careers</a>
+          <div class="right item">
+            <a class="ui inverted button">Log in</a>
+            <a class="ui inverted button">Sign Up</a>
+          </div>
+        </div>
+      </div>*@
+
+    <div class="ui text container banner-call-to-action">
+      <h1 class="ui header banner">
+        GUY SHAHINE
+      </h1>
+      <h2 class="banner-tagline">Software Engineer Guy</h2>
+    </div>
+    <div class="banner-external-links">
+      <a href="https://github.com/chlela" target="_blank">
+        <span class="fa-2x fa-stack">
+          <i class="fa fa-github fa-inverse fa-stack-1x"></i>
+        </span>
+      </a>
+      <a href="http://stackexchange.com/users/119754/guy" target="_blank">
+        <span class="fa-2x fa-stack">
+          <i class="fa fa-stack-overflow fa-inverse fa-stack-1x"></i>
+        </span>
+      </a>
+      <a href="http://blog.gshahine.com/">
+        <span class="fa-2x fa-stack">
+          <i class="fa fa-wordpress fa-inverse fa-stack-1x"></i>
+        </span>
+      </a>
+    </div>
+
+  </section>
+
+  <section class="uisegment section-odd about-section">
+    <div class="ui container">
+      <div>
+        <h1 class="ui header">About that Guy</h1>
+      </div>
+      <div class="center aligned row">
+        <p>
+          <span class="paragraph-annotation">1984 - </span>Born and raised in North Lebanon,
+          <a href="https://en.wikipedia.org/wiki/Zgharta" target="_blank" rel="nofollow">Zgharta</a> in the winter,
+          <a href="https://en.wikipedia.org/wiki/Ehden" target="_blank" rel="nofollow">Ehden</a> during the summer (20 min drive up to the mountains depends on who's driving).
+        </p>
+        <p>
+          <span class="paragraph-annotation">2002 - </span>Moved to
+          <a href="https://en.wikipedia.org/wiki/Kaslik" target="_blank" rel="nofollow">Kaslik</a> to study Computer Science at Holy spirit university (USEK).
+          3 years later, I got an opportunity to transfer to <a href="http://digipen.edu" target="_blank" rel="nofollow">Digipen Institute of Technology</a> in Redmond, WA
+          (suburbs of Seattle)
+        </p>
+        <p>
+          <span class="paragraph-annotation">2005 - </span>
+          Boarded my first time flight headed to <b>Seattle, WA</b> at age 21 (luckily, it was legal age to consume alcohol in the US).
+          First semester took a lot of adjustments. Second semester got much more exciting escpecially when I got accepted to intern at <b>Nintendo</b>.
+        </p>
+        <p>
+          <span class="paragraph-annotation">2006 - </span>
+          Flew back to <b>Lebanon</b> and started working at al <b>Kalam al Electroni [القلم الالكتروني]</b> building mobile games, (offshore R&amp;D for DigiPen) .
+          Suddenly, In less than a month, a regonial conflict led to the destruction of most bridges, power plants, airport, etc.
+          (If you're interested in getting a small taste, watch <a href="http://www.imdb.com/title/tt0944985/" target="_blank" rel="nofollow">Anthony Bourdain's episode in Beirut</a>).
+          Life became very difficult so I decided to go back to Redmond and complete my Masters in Computer Science at <b>DigiPen</b>.
+        </p>
+        <p>
+          <span class="paragraph-annotation">2006 (Summer) - </span>
+          Came back to the <b>US</b> and this time around, it was much easier, mainly because I was joined by few of my classmates from Lebanon, where a couple of them became my
+          roommates/classmates/best friends/co-workers/brothers. (Patrick lives in Seattle today and Karim is close by in San Mateo).
+        </p>
+        <p>
+          <span class="paragraph-annotation">2008 - </span>
+          Joined <b>Microsoft</b> to work on a stealth project codenamed RedDog, then rumoured to be commercialized as Windows Strata then one morning we woke up and all over the news
+          it was called Windows Azure. In 2016 it was then renamed to <b>Microsoft Azure</b>.
+        </p>
+        <p>
+          <span class="paragraph-annotation">2014 - </span>
+          Moved to <b>San Francisco</b> to join <b>Yammer</b> (Enterprise Social Network, cousin of workplace by Facebook)
+        </p>
+        <p>
+          <span class="paragraph-annotation">2015 - </span>
+          Quit my full-time job to focus 100% on <b>Resoltz</b>, a fitness app to get training plans from personal trainers around the world.
+        </p>
+        <p>
+          <span class="paragraph-annotation">2016 - </span>
+          Documenting this story
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="uisegment section-even">
+    <div class="ui container">
+      <div>
+        <h1 class="ui header">Recent Blog Posts</h1>
+      </div>
+      <div class="center aligned row">
+        <div class="blog">
+          <div class="blog-tabs">
+            <a class="blog-tab" href="http://blog.gshahine.com/converting-users-to-customers/" target="_blank">
+              <i class="fa fa-align-left fa-fw"></i>
+              <h3 class="blog-title">Converting Users to Customers</h3>
+              <div class="blog-subtitle">October 22, 2016</div>
+            </a>
+            <a class="blog-tab" href="http://blog.gshahine.com/behind-resoltz-com/" target="_blank">
+              <i class="fa fa-align-left fa-fw"></i>
+              <h3 class="blog-title">Behind Resoltz.com</h3>
+              <div class="blog-subtitle">February 15, 2016</div>
+            </a>
+            <a class="blog-tab" href="http://blog.gshahine.com/hummus-recipe/" target="_blank">
+              <i class="fa fa-align-left fa-fw"></i>
+              <h3 class="blog-title">My Favorite Hummus Recipe</h3>
+              <div class="blog-subtitle">January 29, 2015</div>
+            </a>
+          </div>
+
+          <a class="section-even-more-link" href="http://blog.gshahine.com/" target="_blank">View More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ui segment section-odd">
+    <div class="ui container">
+      <div>
+        <h1 class="ui header">Instagram Guy</h1>
+      </div>
+      <div class="section-flat row">
+        <div class="insta-posts-container">
+          <div class="insta-post">
+            <amp-instagram data-shortcode="0GALdgscGX"
+                           width="1"
+                           height="1"
+                           layout="responsive">
+            </amp-instagram>
+          </div>
+          <div class="insta-post">
+            <amp-instagram data-shortcode="BIBcSx6ho5s"
+                           width="1"
+                           height="1"
+                           layout="responsive">
+            </amp-instagram>
+          </div>
+          <div class="insta-post">
+            <amp-instagram data-shortcode="BIxqPYAhANc"
+                           width="1"
+                           height="1"
+                           layout="responsive">
+            </amp-instagram>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-carousel row">
+        <amp-carousel width="1"
+                      height="1"
+                      layout="responsive"
+                      type="slides">
+          <amp-instagram data-shortcode="0GALdgscGX"
+                         width="1"
+                         height="1"
+                         layout="responsive">
+          </amp-instagram>
+          <amp-instagram data-shortcode="BIBcSx6ho5s"
+                         width="1"
+                         height="1"
+                         layout="responsive">
+          </amp-instagram>
+          <amp-instagram data-shortcode="BIxqPYAhANc"
+                         width="1"
+                         height="1"
+                         layout="responsive">
+          </amp-instagram>
+        </amp-carousel>
+      </div>
+
+      <a href="https://instagram.com/mrchlela" class="section-odd-more-link" target="_blank" rel="nofollow">View More</a>
+    </div>
+  </section>
+
+
+
+  @*<section class="ui segment section-odd">
+      <div class="ui container">
+        <div>
+          <h1 class="ui header">Projects</h1>
+        </div>
+        <div class="section-carousel row">
+          <amp-carousel width="1"
+                        height="1"
+                        layout="responsive"
+                        type="slides">
+
+          </amp-carousel>
+        </div>
+      </div>
+    </section>*@
+
+
+  <div class="ui footer segment">
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="footer-column">
+          <h4 class="ui inverted header">More Guy</h4>
+          <div class="ui inverted link list">
+            <a href="mailto:hi@gshahine.com" target="_blank" class="item" rel="nofollow"><i class="fa fa-envelope-o fa-fw"></i> Contact</a>
+            <a href="http://blog.gshahine.com/" target="_blank" class="item"><i class="fa fa-wordpress fa-fw"></i> Blog</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4 class="ui inverted header">Social Guy</h4>
+          <div class="ui inverted link list">
+            <a href="https://facebook.com/gshahine" target="_blank" class="item" rel="nofollow"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
+            <a href="https://twitter.com/mrchlela" target="_blank" class="item" rel="nofollow"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
+            <a href="https://instagram.com/mrchlela" target="_blank" class="item" rel="nofollow"><i class="fa fa-instagram fa-fw"></i> Instagram</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4 class="ui inverted header">Professional Guy</h4>
+          <div class="ui inverted link list">
+            <a href="http://www.linkedin.com/in/gshahine" target="_blank" class="item" rel="nofollow"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
+            <a href="https://github.com/chlela" target="_blank" class="item" rel="nofollow"><i class="fa fa-github fa-fw"></i> Github</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4 class="ui inverted header">Stackoverflow Guy</h4>
+          <a href="http://stackexchange.com/users/119754/guy" target="_blank" class="item" rel="nofollow">
+            <amp-img src="https://stackexchange.com/users/flair/119754.png" width="208" height="58" alt="profile for Guy Shahine on Stack Exchange" title="profile for Guy Shahine on Stack Exchange"></amp-img>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
