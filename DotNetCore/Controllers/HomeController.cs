@@ -1,8 +1,9 @@
 ﻿namespace Gshahine.DotNetCore.Controllers
 {
-  using Microsoft.AspNetCore.Mvc;
+    using System.Text;
+    using Microsoft.AspNetCore.Mvc;
 
-  public class HomeController : Controller
+    public class HomeController : Controller
   {
     [Route("html5")]
     public IActionResult HTML5()
@@ -32,6 +33,11 @@
     public IActionResult Error()
     {
       return View();
+    }
+
+    [Route(".well-known/acme-challenge/WP9UtlstQdjCq_lQrJXFtuk5OGjCiv2CE2KKc7mVDeo")]
+    public IActionResult AcmeDomainValidation() {
+      return new FileContentResult(Encoding.UTF8.GetBytes("WP9UtlstQdjCq_lQrJXFtuk5OGjCiv2CE2KKc7mVDeo.u10OB683-R5VroKL7vZdOs75_EXzVyh9cOfccXZ4rcc"), "text/plain");
     }
   }
 }
