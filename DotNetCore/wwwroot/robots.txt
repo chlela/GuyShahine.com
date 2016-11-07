@@ -3,4 +3,4 @@ Allow: /
 Disallow: /wp-admin/
 Disallow: /wp-includes/
 
-Sitemap: http://gshahine.com/sitemap.xml
+Sitemap: https://gshahine.com/sitemap.xml

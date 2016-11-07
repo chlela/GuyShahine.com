@@ -1,8 +1,9 @@
 ﻿namespace Gshahine.DotNetCore.Controllers
 {
-  using Microsoft.AspNetCore.Mvc;
+    using System.Text;
+    using Microsoft.AspNetCore.Mvc;
 
-  public class HomeController : Controller
+    public class HomeController : Controller
   {
     [Route("html5")]
     public IActionResult HTML5()
