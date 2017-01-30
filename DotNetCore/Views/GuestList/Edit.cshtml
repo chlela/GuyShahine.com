@@ -6,22 +6,21 @@
 
 @section head {
   <style>
-    .ui.container {
-      padding-top: 5em;
-      padding-bottom: 5em;
+    .ui.main-content {
+      padding: 5em;
     }
 
     .ui.header {
       margin-bottom: 2em;
     }
 
-        .ui.visible.left.sidebar ~ .pusher {
+    .ui.visible.left.sidebar ~ .pusher {
       transform: translate3d(60px, 0, 0);
     }
   </style>
 }
 
-<div class="ui container">
+<div class="ui main-content">
   <div class="ui header three column grid">
     <div class="column">
       <h1>Edit</h1>
@@ -32,51 +31,51 @@
       <form action="/guestlist/delete" method="post">
         <input type="hidden" name="Id" value="@Model.Id" />
         <button class="ui red mini button" type="submit">Delete</button>
-      </form>
-    </div>
-  </div>
-  <form action="/guestlist/edit" method="post" class="ui form">
-    <div class="three fields">
-      <input type="hidden" name="Id" value="@Model.Id" />
-      <div class="field">
+        </form>
+        </div>
+        </div>
+        <form action="/guestlist/edit" method="post" class="ui form">
+        <div class="three fields">
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <div class="field">
         <label>First Name</label>
         <input type="text" name="FirstName" placeholder="First Name" value="@Model.FirstName ">
-      </div>
-      <div class="field">
+        </div>
+        <div class="field">
         <label>Last Name</label>
         <input type="text" name="LastName" placeholder="Last Name" value="@Model.LastName">
-      </div>
-      <div class="field">
+        </div>
+        <div class="field">
         <label>Nickname</label>
         <input type="text" name="NickName" placeholder="Nickname" value="@Model.Nickname">
-      </div>
-      <div class="field">
+        </div>
+        <div class="field">
         <label>Phone Number</label>
         <input type="text" name="PhoneNumber" placeholder="Phone Number" value="@Model.Phonenumber">
-      </div>
-    </div>
+        </div>
+        </div>
 
-    <div class="four fields">
-      <div class="field">
+        <div class="four fields">
+        <div class="field">
         <label># of Guests</label>
         <input type="text" name="Guests" placeholder="# of Guests" value="@Model.Guests" />
-      </div>
-      <div class="field">
+        </div>
+        <div class="field">
         <label>Guest Of</label>
         <input type="text" name="GuestOf" placeholder="Guest of" value="@Model.GuestOf" />
-      </div>
-      <div class="field">
+        </div>
+        <div class="field">
         <label>Priority</label>
         <input type="number" name="Priority" placeholder="Priority 1-10" value="@Model.Priority" />
-      </div>
-      <div class="field">
+        </div>
+        <div class="field">
         <label>Relationship</label>
         <input type="text" name="Relationship" placeholder="Relationship" value="@Model.Relationship" />
-      </div>
-    </div>
+        </div>
+        </div>
 
-    <button class="ui purple large button" type="submit">Update</button>
-  </form>
+        <button class="ui purple large button" type="submit">Update</button>
+        </form>
 
 
-</div>
+        </div>
