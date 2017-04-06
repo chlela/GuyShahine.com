@@ -34,5 +34,11 @@
     {
       return View();
     }
+
+    [Route("seattle-1310b-29th-ave-s")]
+    public IActionResult SeattleHouse()
+    {
+      return View();
+    }
   }
 }
