@@ -41,16 +41,16 @@
       return View();
     }
 
-    [RouteAttribute("tNryy_CVd4W2gkGcvsKjB6gIkjgiOP5iaQtmVx-aKV8")]
+    [RouteAttribute(".well-known/acme-challenge/A-UKy5zxBfxSjs2-G8VIubeFj_F4E-1H9_H05INs4jI")]
      public IActionResult Verify1()
      {
-       return Content("tNryy_CVd4W2gkGcvsKjB6gIkjgiOP5iaQtmVx-aKV8.sexpcY0QdD9A1ERg6I_4tpbj8UhmXCh4no4wyTXbVy0");
+       return Content("A-UKy5zxBfxSjs2-G8VIubeFj_F4E-1H9_H05INs4jI.85aiEmllgEjwN7iEz6QhiltWMD9Su42NUffD0VenhgQ");
      }
 
-     [RouteAttribute("s-S7LQmqysEPJPqwmk5FoMPO8H4DA5I2Wzc0Z0lGdBM")]
+     [RouteAttribute(".well-known/acme-challenge/Axx9OHDf2a4NF248wHutFQF1jqClbxukfKoOAcH5c-w")]
      public IActionResult Verify2()
      {
-       return Content("s-S7LQmqysEPJPqwmk5FoMPO8H4DA5I2Wzc0Z0lGdBM.sexpcY0QdD9A1ERg6I_4tpbj8UhmXCh4no4wyTXbVy0");
+       return Content("Axx9OHDf2a4NF248wHutFQF1jqClbxukfKoOAcH5c-w.85aiEmllgEjwN7iEz6QhiltWMD9Su42NUffD0VenhgQ");
      }
   }
 }
