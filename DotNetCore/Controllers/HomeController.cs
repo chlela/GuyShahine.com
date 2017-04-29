@@ -34,5 +34,17 @@
     {
       return View();
     }
+
+    [RouteAttribute("tNryy_CVd4W2gkGcvsKjB6gIkjgiOP5iaQtmVx-aKV8")]
+     public IActionResult Verify1()
+     {
+       return Content("tNryy_CVd4W2gkGcvsKjB6gIkjgiOP5iaQtmVx-aKV8.sexpcY0QdD9A1ERg6I_4tpbj8UhmXCh4no4wyTXbVy0");
+     }
+
+     [RouteAttribute("s-S7LQmqysEPJPqwmk5FoMPO8H4DA5I2Wzc0Z0lGdBM")]
+     public IActionResult Verify2()
+     {
+       return Content("s-S7LQmqysEPJPqwmk5FoMPO8H4DA5I2Wzc0Z0lGdBM.sexpcY0QdD9A1ERg6I_4tpbj8UhmXCh4no4wyTXbVy0");
+     }
   }
 }
