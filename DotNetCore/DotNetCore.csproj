@@ -2,14 +2,13 @@
 
   <PropertyGroup>
     <Copyright>2017 Guy Shahine. All rights reserved</Copyright>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
     <DebugType>portable</DebugType>
     <PreserveCompilationContext>true</PreserveCompilationContext>
     <AssemblyName>DotNetCore</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>DotNetCore</PackageId>
     <RuntimeFrameworkVersion>1.1.1</RuntimeFrameworkVersion>
-    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
   </PropertyGroup>
 
   <ItemGroup>
