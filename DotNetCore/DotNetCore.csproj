@@ -8,6 +8,8 @@
     <AssemblyName>DotNetCore</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>DotNetCore</PackageId>
+    <ApplicationInsightsResourceId>/subscriptions/17344c94-62ef-403f-8bbb-c2db6c664fff/resourcegroups/Gshahine.com/providers/microsoft.insights/components/gshahine-weu</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/17344c94-62ef-403f-8bbb-c2db6c664fff/resourcegroups/Gshahine.com/providers/microsoft.insights/components/gshahine-weu</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
 
   <ItemGroup>
