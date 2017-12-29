@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore", "DotNetCore\DotNetCore.csproj", "{708C4E64-7E22-4132-88CA-22D20D5A76F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gshahine.MVC5", "MVC5\Gshahine.MVC5.csproj", "{A7F897AA-198F-4C47-A3C1-AF5E71BBE3CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5", "MVC5\MVC5.csproj", "{A7F897AA-198F-4C47-A3C1-AF5E71BBE3CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
