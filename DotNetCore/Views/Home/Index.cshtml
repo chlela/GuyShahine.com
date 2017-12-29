@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Guy Shahine";
+  ViewData["Title"] = "Guy Shahine";
 }
 
 @section head {
@@ -498,6 +498,23 @@
         display: inline-block;
       }
 
+      .projects-media-container {
+        display: flex;
+        justify-content: space-between
+      }
+
+      .project-post {
+        width: 30%;
+        display: inline-block;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0px 3px 20px 0 rgba(0,0,0,0.075);
+      }
+
+        .project-post:hover {
+          box-shadow: 0px 3px 50px 0 rgba(0,0,0,0.075);
+          transform: translateY(-5px);
+        }
+
       .footer-column {
         width: 18%;
       }
@@ -732,23 +749,73 @@
     </div>
   </section>
 
-
-
-  @*<section class="ui segment section-odd">
-      <div class="ui container">
-        <div>
-          <h1 class="ui header">Projects</h1>
-        </div>
-        <div class="section-carousel row">
-          <amp-carousel width="1"
-                        height="1"
-                        layout="responsive"
-                        type="slides">
-
-          </amp-carousel>
+  <section class="ui segment section-even">
+    <div class="ui container">
+      <div>
+        <h1 class="ui header">Projects</h1>
+      </div>
+      <div class="section-flat row">
+        <div class="projects-media-container">
+          <a class="project-post" href="http://soutoujewelry.com/" target="_blank">
+            <amp-img alt="Joud Soutou Jewelry"
+                     src="images/joud-soutou-jewelry-512x512.jpg"
+                     width="512"
+                     height="512"
+                     layout="responsive">
+            </amp-img>
+          </a>
+          <a class="project-post" href="http://timekit.io/" target="_blank">
+            <amp-img alt="TimeKit Inc."
+                     src="images/timekit-512x512.jpg"
+                     width="512"
+                     height="512"
+                     layout="responsive">
+            </amp-img>
+          </a>
+          <a class="project-post" href="http://agridata.ai/" target="_blank">
+            <amp-img alt="AgriData Inc."
+                     src="images/agridata-512x512.jpg"
+                     width="512"
+                     height="512"
+                     layout="responsive">
+            </amp-img>
+          </a>
         </div>
       </div>
-    </section>*@
+
+      <div class="section-carousel row">
+        <amp-carousel width="1"
+                      height="1"
+                      layout="responsive"
+                      type="slides">
+          <a class="project-post" href="http://soutoujewelry.com/" target="_blank">
+            <amp-img alt="Joud Soutou Jewelry"
+                     src="images/joud-soutou-jewelry-512x512.jpg"
+                     width="512"
+                     height="512"
+                     layout="responsive">
+            </amp-img>
+          </a>
+          <a class="project-post" href="http://timekit.io/" target="_blank">
+            <amp-img alt="TimeKit Inc."
+                     src="images/timekit-512x512.jpg"
+                     width="512"
+                     height="512"
+                     layout="responsive">
+            </amp-img>
+          </a>
+          <a class="project-post" href="http://agridata.ai/" target="_blank">
+            <amp-img alt="AgriData Inc."
+                     src="images/agridata-512x512.jpg"
+                     width="512"
+                     height="512"
+                     layout="responsive">
+            </amp-img>
+          </a>
+        </amp-carousel>
+      </div>
+    </div>
+  </section>
 
 
   <div class="ui footer segment">
