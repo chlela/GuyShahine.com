@@ -3,7 +3,7 @@
 }
 
 @section head {
-  <link rel="canonical" href="https://gshahine.com" />
+  <link rel="canonical" href="https://guyshahine.com" />
   <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
   <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 
@@ -14,8 +14,6 @@
     "name": "Guy Shahine",
     "url": "https://guyshahine.com",
     "sameAs": [
-    "https://www.facebook.com/gshahine",
-    "https://instagram.com/mrchlela",
     "https://twitter.com/mrchlela",
     "https://www.linkedin.com/in/gshahine",
     "https://plus.google.com/+GuyShahine"
@@ -33,7 +31,7 @@
     "nationality": "Lebanese",
     "contactPoint": {
     "@@type": "ContactPoint",
-    "email": "hey@gshahine.com",
+    "email": "You@BetterEmailGuy.com",
     "telephone": "+14242343361",
     "contactType": "technical support",
     "areaServed": "US",
@@ -319,7 +317,7 @@
     }
 
     .section-even {
-      padding: 3em 0 4em;
+      padding: 1.5em 0;
       background-color: #247ba0;
       color: #fff;
     }
@@ -366,22 +364,33 @@
           padding-left: 10px;
         }
 
-      .masthead .banner-external-links {
-        position: absolute;
-        bottom: 40px;
-        left: 0;
-        right: 0;
-        text-align: center;
+    .banner-email-link {
+      position: absolute;
+      bottom: 2em;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+
+      .banner-email-link a,
+      .section-email-link a {
+        font-size: 150%;
+        font-weight: bold;
+        text-decoration: underline;
       }
 
-        .masthead .banner-external-links a {
-          padding: 0 10px;
-        }
+    .links-section .banner-external-links {
+      text-align: center;
+    }
 
-        .masthead .banner-external-links i {
-          border-radius: 50%;
-          border: 1px solid #70c1b3;
-        }
+      .links-section .banner-external-links a {
+        padding: 0 1em;
+      }
+
+      .links-section .banner-external-links i {
+        border-radius: 50%;
+        border: 1px solid #70c1b3;
+      }
 
     .ui.curtain {
       position: absolute;
@@ -393,9 +402,8 @@
     }
 
     h1.ui.header {
-      font-size: 3em;
+      font-size: 300%;
       font-weight: normal;
-      margin-top: 2em;
       margin-bottom: 1em;
     }
 
@@ -440,6 +448,10 @@
       color: #b2dbbf;
     }
 
+    .email-link-section {
+      text-align: center;
+    }
+
     .footer.segment {
       text-align: left;
       color: #fff;
@@ -459,6 +471,15 @@
         padding-left: 1rem;
         padding-right: 1rem;
         vertical-align: top;
+      }
+
+      .section-even {
+        padding: 3em 0;
+      }
+
+      .banner-email-link a,
+      .section-email-link a {
+        font-size: 300%;
       }
     }
 
@@ -569,8 +590,6 @@
 <!-- Page Contents -->
 <div class="pusher">
   <section class="ui inverted vertical masthead">
-    @*<div class="ui curtain"></div>*@
-
     @*<div class="ui container">
         <div class="ui large secondary inverted pointing menu">
           <a class="toc item">
@@ -594,8 +613,13 @@
       <h2 class="banner-tagline">Entrepeneur Guy</h2>
       <h2 class="banner-tagline">Software Engineer Guy</h2>
       <h2 class="banner-tagline">World Traveler Guy</h2>
-
     </div>
+    <div class="banner-email-link">
+      <a href="mailto:You@BetterEmailGuy.com">You@BetterEmailGuy.com</a>
+    </div>
+  </section>
+
+  <section class="uisegment section-even links-section">
     <div class="banner-external-links">
       <a href="https://github.com/chlela" target="_blank">
         <span class="fa-2x fa-stack">
@@ -613,7 +637,6 @@
         </span>
       </a>
     </div>
-
   </section>
 
   <section class="uisegment section-odd about-section">
@@ -670,17 +693,17 @@
                      layout="responsive">
             </amp-img>
           </a>
-          <a class="project-post" href="http://timekit.io/" target="_blank">
-            <amp-img alt="TimeKit Inc."
-                     src="images/timekit-512x512.jpg"
+          <a class="project-post" href="http://agridata.ai/" target="_blank">
+            <amp-img alt="AgriData Inc."
+                     src="images/agridata-512x512.jpg"
                      width="512"
                      height="512"
                      layout="responsive">
             </amp-img>
           </a>
-          <a class="project-post" href="http://agridata.ai/" target="_blank">
-            <amp-img alt="AgriData Inc."
-                     src="images/agridata-512x512.jpg"
+          <a class="project-post" href="http://timekit.io/" target="_blank">
+            <amp-img alt="TimeKit Inc."
+                     src="images/timekit-512x512.jpg"
                      width="512"
                      height="512"
                      layout="responsive">
@@ -702,17 +725,17 @@
                      layout="responsive">
             </amp-img>
           </a>
-          <a class="project-post" href="http://timekit.io/" target="_blank">
-            <amp-img alt="TimeKit Inc."
-                     src="images/timekit-512x512.jpg"
+          <a class="project-post" href="http://agridata.ai/" target="_blank">
+            <amp-img alt="AgriData Inc."
+                     src="images/agridata-512x512.jpg"
                      width="512"
                      height="512"
                      layout="responsive">
             </amp-img>
           </a>
-          <a class="project-post" href="http://agridata.ai/" target="_blank">
-            <amp-img alt="AgriData Inc."
-                     src="images/agridata-512x512.jpg"
+          <a class="project-post" href="http://timekit.io/" target="_blank">
+            <amp-img alt="TimeKit Inc."
+                     src="images/timekit-512x512.jpg"
                      width="512"
                      height="512"
                      layout="responsive">
@@ -723,6 +746,13 @@
     </div>
   </section>
 
+  <section class="ui segment section-even email-link-section">
+    <div class="section-email-link">
+      <div class="ui container">
+        <a href="mailto:You@BetterEmailGuy.com">You@BetterEmailGuy.com</a>
+      </div>
+    </div>
+  </section>
 
   <div class="ui footer segment">
     <div class="ui container">
@@ -730,7 +760,7 @@
         <div class="footer-column">
           <h4 class="ui inverted header">More <br /> Guy</h4>
           <div class="ui inverted link list">
-            <a href="mailto:hi@gshahine.com" target="_blank" class="item" rel="nofollow"><i class="fa fa-envelope-o fa-fw"></i> Contact</a>
+            <a href="mailto:You@BetterEmailGuy.com" target="_blank" class="item" rel="nofollow"><i class="fa fa-envelope-o fa-fw"></i> Contact</a>
             <a href="http://blog.gshahine.com/" target="_blank" class="item"><i class="fa fa-wordpress fa-fw"></i> Blog</a>
           </div>
         </div>
