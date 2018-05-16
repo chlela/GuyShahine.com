@@ -6,8 +6,8 @@
   position: relative;
   min-height: 700px;
   padding: 1em 0em;
-  background: url('//az388900.vo.msecnd.net/photos/ehden_ny2015.jpg') center center no-repeat;
-  background-size: cover;
+  /*background: url('/images/ehden_ny2015.jpg') center center no-repeat;
+  background-size: cover;*/
 }
 
 .ui.curtain {
